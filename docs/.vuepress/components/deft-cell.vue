@@ -47,7 +47,7 @@ export default {
         // eslint-disable-next-line vue/no-async-in-computed-properties
         this.$nextTick(() => {
           this.added = true;
-          this.$el.addEventListener("click", this.handleClick);
+          this.$el && this.$el.addEventListener("click", this.handleClick);
         });
         return resolved.fullPath || resolved.path;
       }
