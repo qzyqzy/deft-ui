@@ -94,6 +94,7 @@ export default {
     }
     &-text {
       vertical-align: middle;
+      word-break: break-all;
     }
 
     &--default {

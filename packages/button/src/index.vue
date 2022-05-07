@@ -24,16 +24,16 @@
 
 <script>
 /**
- * $module components/button
- * $desc 按钮
- * $param {string} [type=default] - 显示类型，接受 default, primary, danger
- * $param {boolean} [disabled=false] - 禁用
- * $param {boolean} [plain=false] - 幽灵按钮
- * $param {string} [size=normal] - 尺寸，接受 normal, small, large
- * $param {string} [native-type] - 原生 type 属性
- * $param {string} [icon] - 图标，提供 more, back，或者自定义的图标（传入不带前缀的图标类名，最后拼接成 .deftui-xxx）
- * $param {slot} - 显示文本
- * $param {slot} [icon] 显示图标
+ * @module button
+ * @desc 按钮
+ * @param {string} [type=default] - 显示类型，接受 default, primary, danger
+ * @param {boolean} [disabled=false] - 禁用
+ * @param {boolean} [plain=false] - 幽灵按钮
+ * @param {string} [size=normal] - 尺寸，接受 normal, small, large
+ * @param {string} [native-type] - 原生 type 属性
+ * @param {string} [icon] - 图标，提供 more, back，或者自定义的图标（传入不带前缀的图标类名，最后拼接成 .deftui-xxx）
+ * @param {slot} - 显示文本
+ * @param {slot} [icon] 显示图标
  *
  * $example
  * <deft-button size="large" icon="back" type="primary">按钮</deft-button>
@@ -85,7 +85,6 @@ export default {
     overflow: hidden;
     position: relative;
     text-align: center;
-
     &::after {
       background-color: #000;
       content: " ";
@@ -106,6 +105,7 @@ export default {
       display: inline-block;
     }
     &-text {
+      word-break: break-all;
       vertical-align: middle;
     }
 

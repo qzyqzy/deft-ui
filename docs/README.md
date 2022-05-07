@@ -2,13 +2,13 @@
 
 > Mobile UI elements for **Vue 2.0**
 
-## Installation
+## 安装
 
 ```shell
 npm i deft-ui -S
 ```
 
-## Usage
+## 使用
 
 全部引入.
 

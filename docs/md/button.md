@@ -77,7 +77,7 @@ With custom icon
 </deft-button>
 ```
 <deft-button>
-  <img src="/logo.png" height="20" width="20" slot="icon" />
+  <img src="/deft-ui/logo.png" height="20" width="20" slot="icon" />
   icon
 </deft-button>
 
@@ -85,17 +85,17 @@ With custom icon
 
 ## API
 
-| option   | description                     | type    | acceptable values        | default |
+| 属性   | 描述                     | 类型    | 接收的值        | 默认值 |
 | :------- | :------------------------------ | :------ | :----------------------- | :------ |
-| plain    | if the button is a ghost button | Boolean |                          | false   |
-| disabled | if the button is disabled       | Boolean |                          | false   |
-| type     | type of the button              | String  | default, primary, danger | default |
-| size     | size of the button              | String  | small, normal, large     | normal  |
-| icon     | button icon                     | String  | more, back               |         |
+| plain    | ghost button | Boolean |   | false   |
+| disabled | 是否禁用 | Boolean | | false   |
+| type     | 类型 | String  | default, primary, danger | default |
+| size     | 大小  | String  | small, normal, large  normal  |
+| icon     |  icon | String  | more, back |         |
 
 ## Slot
 
 | name | description    |
 | :--- | :------------- |
-| -    | displayed text |
-| icon | custom icon    |
+| -    | 要展示的文本 |
+| icon | 自定义icon值 |

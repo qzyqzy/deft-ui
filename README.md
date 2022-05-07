@@ -5,7 +5,7 @@
 - [Github](https://github.com/qzyqzy/deft-ui)
 - [Docs](https://qzyqzy.github.io/deft-ui/)
 
-## Installation
+## 安装
 ```shell
 npm i deft-ui -S
 ```
