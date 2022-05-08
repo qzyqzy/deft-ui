@@ -1,8 +1,7 @@
 import Vue from "vue";
 
-import Toast1 from "./index.vue";
-console.log(Toast1, "Toast1");
-const ToastConstructor = Vue.extend(Toast1);
+import ToastCom from "./index.vue";
+const ToastConstructor = Vue.extend(ToastCom);
 
 let toastPool = [];
 
