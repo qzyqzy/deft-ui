@@ -8,6 +8,6 @@ module.exports = {
       { text: "Github", link: "https://github.com/qzyqzy/deft-ui" },
       { text: "Npm", link: "https://www.npmjs.com/package/deft-ui" },
     ],
-    sidebar: ["/", "/md/button", "/md/cell"],
+    sidebar: ["/", "/md/button", "/md/cell", "/md/toast"],
   },
 };

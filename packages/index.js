@@ -5,6 +5,8 @@ import button from "./button";
 
 import cell from "./cell";
 
+import Toast from "./toast";
+
 // 组件列表
 const components = [button, cell];
 
@@ -33,4 +35,5 @@ export {
   // 以下是具体的组件列表
   button,
   cell,
+  Toast,
 };
