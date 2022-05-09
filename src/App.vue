@@ -2,22 +2,19 @@
   <div id="app">
     <!-- 测试代码 -->
     <h2>mint-ui</h2>
-
+    <mt-spinner :type="3"></mt-spinner>
     <h2>deft-ui</h2>
+    <deft-spinner :type="3"></deft-spinner>
   </div>
 </template>
 
 <script>
-import { Toast } from "../packages";
-// import { Toast } from "mint-ui";
+// import { Indicator } from "../packages";
+// import { Indicator } from "mint-ui";
 export default {
   name: "App",
   mounted() {
-    Toast({
-      message: "operation success",
-      iconClass: "deftui deftui-success",
-      duration: 1000,
-    });
+    // Indicator.open("加载中...");
   },
 };
 </script>
