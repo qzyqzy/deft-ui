@@ -19,7 +19,7 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style lang="scss">
 .deft-spinner-snake {
   animation: deft-spinner-rotate 0.8s infinite linear;
   border: 4px solid transparent;

@@ -1,6 +1,6 @@
 {
   "name": "deft-ui",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": false,
   "main": "lib/deft-ui.umd.min.js",
   "author": {

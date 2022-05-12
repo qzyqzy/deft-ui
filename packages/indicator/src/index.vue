@@ -5,11 +5,11 @@
         class="deft-indicator-wrapper"
         :style="{ padding: text ? '20px' : '15px' }"
       >
-        <!-- <spinner
+        <spinner
           class="deft-indicator-spin"
           :type="convertedSpinnerType"
           :size="32"
-        ></spinner> -->
+        ></spinner>
         <span class="deft-indicator-text" v-show="text">{{ text }}</span>
       </div>
       <div class="deft-indicator-mask" @touchmove.stop.prevent></div>
@@ -17,7 +17,8 @@
   </transition>
 </template>
 
-<script type="text/babel">
+<script>
+import Spinner from "./../../spinner/index";
 export default {
   data() {
     return {
@@ -26,7 +27,7 @@ export default {
   },
 
   components: {
-    // Spinner,
+    Spinner,
   },
 
   computed: {
@@ -54,11 +55,10 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.mint-indicator {
-  -webkit-transition: opacity 0.2s linear;
+.deft-indicator {
   transition: opacity 0.2s linear;
 }
-.mint-indicator-wrapper {
+.deft-indicator-wrapper {
   top: 50%;
   left: 50%;
   position: fixed;
@@ -70,18 +70,18 @@ export default {
   box-sizing: border-box;
   text-align: center;
 }
-.mint-indicator-text {
+.deft-indicator-text {
   display: block;
   color: #fff;
   text-align: center;
   margin-top: 10px;
   font-size: 16px;
 }
-.mint-indicator-spin {
+.deft-indicator-spin {
   display: inline-block;
   text-align: center;
 }
-.mint-indicator-mask {
+.deft-indicator-mask {
   top: 0;
   left: 0;
   position: fixed;
@@ -90,8 +90,8 @@ export default {
   opacity: 0;
   background: transparent;
 }
-.mint-indicator-enter,
-.mint-indicator-leave-active {
+.deft-indicator-enter,
+.deft-indicator-leave-active {
   opacity: 0;
 }
 </style>
