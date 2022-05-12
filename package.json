@@ -24,7 +24,9 @@
     "lib": "vue-cli-service build --target lib --name deft-ui --dest lib packages/index.js",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "deploy": "bash deploy.sh"
+    "deploy": "bash deploy.sh",
+    "commit": "cz",
+    "prepare": "husky install"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -36,10 +38,13 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "3.3.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
+    "husky": "^8.0.1",
     "mint-ui": "^2.2.13",
     "prettier": "^2.4.1",
     "sass": "^1.32.7",
@@ -47,5 +52,10 @@
     "vue-server-renderer": "2.6.0",
     "vue-template-compiler": "^2.6.14",
     "vuepress": "^1.9.7"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

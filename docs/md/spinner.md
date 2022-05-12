@@ -51,7 +51,7 @@ or
 
 | 属性     | 描述         | 类型    | 接收的值                    | 默认值  |
 | :------- | :----------- | :------ | :-------------------------- | :------ |
-| type    | 显示类型 | string|number |   | false   |
+| type    | 显示类型 | string、number |   | false   |
 | size     | 尺寸    | String  |  | 30
 | color     | 颜色   | String  |   |    #999     |
 
