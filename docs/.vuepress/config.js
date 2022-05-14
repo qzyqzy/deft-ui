@@ -1,7 +1,7 @@
 module.exports = {
   title: "deft-ui",
   base: "/deft-ui/",
-
+  plugins: ["demo-container"],
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
@@ -10,11 +10,20 @@ module.exports = {
     ],
     sidebar: [
       "/",
-      "/md/button",
-      "/md/cell",
-      "/md/toast",
-      "/md/spinner",
-      "md/indicator",
+      {
+        title: "CSS Components",
+        collapsable: false,
+        children: [
+          "/md/cssComponents/button",
+          "/md/cssComponents/cell",
+          "/md/cssComponents/spinner",
+        ],
+      },
+      {
+        title: "JS Components",
+        collapsable: false,
+        children: ["/md/jsComponents/toast", "/md/jsComponents/indicator"],
+      },
     ],
   },
 };

@@ -1,14 +1,66 @@
 # Toast
 
-Toast
+> A brief toast box. Custom location, duration and style supported.
 
----
+
 
 ## Import
 
 ```javascript
 import { Toast } from "deft-ui";
 ```
+
+
+## preview
+
+:::demo 确保 Toast 已经保存到 Vue 原型对象上 Vue.prototype.$Toast = Toast;或直接引入使用
+
+```html
+<template>
+  <div id="app">
+    <deft-button type="default" size="large" @click="open">
+      点击弹出 Toast
+    </deft-button>
+    <br>
+    <deft-button type="default" size="large" @click="open2">
+      点击弹出带有 icon 的 Toast
+    </deft-button>
+    <br>
+    <deft-button type="default" size="large" @click="open3">
+      自定义 Toast 位置
+    </deft-button>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "App",
+  methods: {
+    open() {
+      this.$Toast("Upload Complete");
+    },
+    open2() {
+      this.$Toast({
+        message: "operation success",
+        iconClass: "deftui deftui-success",
+      });
+    },
+    open3() {
+      this.$Toast({
+        message: "bottom",
+        position: "bottom",
+      });
+    },
+  },
+};
+</script>
+
+```
+
+:::
+
+
+
 
 ## Example
 
