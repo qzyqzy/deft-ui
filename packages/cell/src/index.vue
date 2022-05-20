@@ -1,29 +1,27 @@
 <template>
-  <div>
-    <a class="deft-cell" :href="href">
-      <span class="deft-cell-mask" v-if="isLink"></span>
-      <div class="deft-cell-left">
-        <slot name="left"></slot>
+  <a class="deft-cell" :href="href">
+    <span class="deft-cell-mask" v-if="isLink"></span>
+    <div class="deft-cell-left">
+      <slot name="left"></slot>
+    </div>
+    <div class="deft-cell-wrapper">
+      <div class="deft-cell-title">
+        <slot name="icon">
+          <i v-if="icon" class="deftui" :class="'deftui-' + icon"></i>
+        </slot>
+        <slot name="title">
+          <span class="deft-cell-text" v-text="title"></span>
+          <span v-if="label" class="deft-cell-label" v-text="label"></span>
+        </slot>
       </div>
-      <div class="deft-cell-wrapper">
-        <div class="deft-cell-title">
-          <slot name="icon">
-            <i v-if="icon" class="deftui" :class="'deftui-' + icon"></i>
-          </slot>
-          <slot name="title">
-            <span class="deft-cell-text" v-text="title"></span>
-            <span v-if="label" class="deft-cell-label" v-text="label"></span>
-          </slot>
-        </div>
-        <div class="deft-cell-value" :class="{ 'is-link': isLink }">
-          <slot>
-            <span v-text="value"></span>
-          </slot>
-        </div>
-        <i v-if="isLink" class="deft-cell-allow-right"></i>
+      <div class="deft-cell-value" :class="{ 'is-link': isLink }">
+        <slot>
+          <span v-text="value"></span>
+        </slot>
       </div>
-    </a>
-  </div>
+      <i v-if="isLink" class="deft-cell-allow-right"></i>
+    </div>
+  </a>
 </template>
 
 <script>
