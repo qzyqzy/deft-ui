@@ -4404,6 +4404,15 @@ deft-ui@^0.1.7:
     deft-ui "^0.1.6"
     vue "^2.6.14"
 
+deft-ui@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/deft-ui/-/deft-ui-0.1.8.tgz#96d1dba6dea46c47991897fbc9e8446f67951e22"
+  integrity sha512-tzzmeP99JX4lg5gbtt7O5HnUDbxXRPTEcuWo6VwG0A93CFEe9fU7WRxVc5MTwtv95WMerjz3SmNqEaazdktPFA==
+  dependencies:
+    core-js "^3.8.3"
+    deft-ui "^0.1.7"
+    vue "^2.6.14"
+
 del@^4.1.1:
   version "4.1.1"
   resolved "https://registry.npmjs.org/del/-/del-4.1.1.tgz"

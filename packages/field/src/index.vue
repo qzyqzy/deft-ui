@@ -77,6 +77,7 @@ export default {
       type: String,
       default: "default",
     },
+    attr: Object,
   },
   data() {
     return {
@@ -91,6 +92,20 @@ export default {
 
     currentValue(val) {
       this.$emit("input", val);
+    },
+    attr: {
+      immediate: true,
+      handler(attrs) {
+        this.$nextTick(() => {
+          const target = [this.$refs.input, this.$refs.textarea];
+          target.forEach((el) => {
+            if (!el || !attrs) return;
+            Object.keys(attrs).map((name) =>
+              el.setAttribute(name, attrs[name])
+            );
+          });
+        });
+      },
     },
   },
   methods: {

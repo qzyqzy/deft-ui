@@ -1,19 +1,21 @@
 <template>
   <div id="app">
     <CheckList v-if="false"></CheckList>
-    <SwitchCom></SwitchCom>
+    <SwitchCom v-if="false"></SwitchCom>
+    <TabContainer></TabContainer>
   </div>
 </template>
 
 <script>
 import CheckList from "./../example/checklist.vue";
 import SwitchCom from "./../example/switch.vue";
-CheckList;
+import TabContainer from "./../example/tab-container.vue";
 export default {
   name: "App",
   components: {
     CheckList,
     SwitchCom,
+    TabContainer,
   },
 };
 </script>

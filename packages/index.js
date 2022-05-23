@@ -4,7 +4,8 @@ require("./../src/assets/font/iconfont.css");
 import button from "./button";
 import cell from "./cell";
 import spinner from "./spinner";
-
+import TabContainer from "./tab-container";
+import TabContainerItem from "./tab-container-item";
 // js
 import Toast from "./toast";
 import Indicator from "./indicator";
@@ -17,7 +18,17 @@ import Checklist from "./checklist";
 import Switch from "./switch";
 
 // 组件列表
-const components = [button, cell, spinner, Field, Radio, Checklist, Switch];
+const components = [
+  button,
+  cell,
+  spinner,
+  TabContainer,
+  TabContainerItem,
+  Field,
+  Radio,
+  Checklist,
+  Switch,
+];
 
 // 定义 install 方法，接收 Vue 作为参数。如果使用 use 注册插件，那么所有的组件都会被注册
 const install = function (Vue) {
@@ -45,6 +56,8 @@ export {
   button,
   spinner,
   cell,
+  TabContainer,
+  TabContainerItem,
   // from
   Field,
   Radio,

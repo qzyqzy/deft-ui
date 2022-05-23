@@ -17,6 +17,17 @@ module.exports = {
           "/md/cssComponents/button",
           "/md/cssComponents/cell",
           "/md/cssComponents/spinner",
+          "/md/cssComponents/tabContainer",
+        ],
+      },
+      {
+        title: "Form Components",
+        collapsable: false,
+        children: [
+          "/md/formComponents/switch",
+          "/md/formComponents/radio",
+          "/md/formComponents/checklist",
+          "/md/formComponents/field",
         ],
       },
       {
